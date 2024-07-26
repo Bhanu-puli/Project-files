@@ -1,0 +1,82 @@
+body{
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    /* position: relative; */
+}
+.upperparent{
+    /* border: 1px solid black; */
+    height: 150px;
+    width: 300px;
+    position:absolute;
+    top: 50px;
+    /* border: 1px solid black; */
+}
+.upperparent div img{
+    height: 100%;
+    width: 100%;
+}
+.photos{
+    height: 200px ;
+    width: 800px;
+    gap: 20px;
+    /* border: 1px solid green; */
+    background-color: black;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.child{
+    width: 100px;
+    height: 150px !important;
+    background-color: blanchedalmond;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    overflow: hidden;
+
+}
+.child img{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    width:20px
+}
+li button{
+    display: none;
+}
+.slick-dots{
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform: translate(-50%,100%);
+    color: white;
+}
+.slick-active{
+    color:red
+}
+button{
+    font-size: 80px;
+    background: transparent;
+    border: none;
+    /* background-color: lightcoral; */
+    color: white;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 2px 1px black; */
+    transition: 1s;
+}
+button:hover{
+    cursor: pointer;
+}

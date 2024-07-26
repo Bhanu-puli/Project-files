@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carouser</title>
+    <link rel="stylesheet" href="slickcarouser.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="upperparent">
+        <div class="child">
+            <img src="images/bg credit.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/2201.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/credit_chip-removebg-preview.png" />
+          </div>
+          <div class="child">
+            <img src="images/female-personal-items-desktop.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/first.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/internet_logo-removebg-preview.png" />
+          </div>
+          <div class="child">
+            <img src="images/lord ganesh.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/Mahesh.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/pawan.jpg" />
+          </div>
+          <div class="child">
+            <img src="images/rollsroyce.jpg" />
+          </div>
+    </div> -->
+    <div class="photos">    
+      <div class="child">
+        <img src="images/bg credit.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/2201.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/credit_chip-removebg-preview.png" />
+      </div>
+      <div class="child">
+        <img src="images/female-personal-items-desktop.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/first.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/internet_logo-removebg-preview.png" />
+      </div>
+      <div class="child">
+        <img src="images/lord ganesh.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/Mahesh.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/pawan.jpg" />
+      </div>
+      <div class="child">
+        <img src="images/rollsroyce.jpg" />
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+   
+    <script>
+      $('.upperparent').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.photos',
+        speed:1000
+      });
+      $('.photos').slick({
+        // fade:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor:'.upperparent',
+        dots: true,
+        // centerMode:true,
+        focusOnSelect:true,
+        prevArrow:`<button class="prev"><</button>`,
+        nextArrow:`<button class="nxt">></button>`,
+        autoplay:true,
+        speed:1000,
+        pauseOnHover:true
+      });
+    </script>
+  </body>
+</html>
